@@ -1,16 +1,16 @@
-# 📚 RecipeHub - Documentation Index
+#  RecipeHub - Documentation Index
 
-## Welcome to RecipeHub! 👋
+## Welcome to RecipeHub! 
 
 Selamat datang di RecipeHub - platform untuk menemukan dan menjelajahi resep makanan dari seluruh dunia.
 
 ---
 
-## 📖 Documentation Guide
+##  Documentation Guide
 
 Pilih dokumentasi yang sesuai dengan kebutuhan Anda:
 
-### 🚀 **Untuk Pemula - Mulai di Sini**
+###  **Untuk Pemula - Mulai di Sini**
 **File:** [`QUICK_START.md`](QUICK_START.md)
 
 - Langkah-langkah mudah untuk mulai
@@ -18,11 +18,9 @@ Pilih dokumentasi yang sesuai dengan kebutuhan Anda:
 - Tips & tricks penggunaan
 - Troubleshooting dasar
 
-**Waktu Baca:** 5 menit
-
 ---
 
-### 📖 **Dokumentasi Lengkap**
+###  **Dokumentasi Lengkap**
 **File:** [`README.md`](README.md)
 
 - Deskripsi project lengkap
@@ -32,27 +30,9 @@ Pilih dokumentasi yang sesuai dengan kebutuhan Anda:
 - Setup instructions lengkap
 - Browser support
 
-**Waktu Baca:** 10 menit
-
 ---
 
-### 🏗️ **Untuk Developer - Technical Deep Dive**
-**File:** [`ARCHITECTURE.md`](ARCHITECTURE.md)
-
-- Arsitektur sistem
-- Data flow diagram
-- Component breakdown
-- API integration detail
-- Code structure
-- Performance metrics
-- Development workflow
-- Scalability planning
-
-**Waktu Baca:** 15 menit
-
----
-
-### ✅ **Requirements Checklist**
+###  **Requirements Checklist**
 **File:** [`CHECKLIST.md`](CHECKLIST.md)
 
 - Verifikasi semua requirement terpenuhi
@@ -66,7 +46,7 @@ Pilih dokumentasi yang sesuai dengan kebutuhan Anda:
 
 ---
 
-### 📊 **Project Summary**
+###  **Project Summary**
 **File:** [`PROJECT_SUMMARY.md`](PROJECT_SUMMARY.md)
 
 - Overview project
