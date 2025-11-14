@@ -70,19 +70,19 @@ Pilih dokumentasi yang sesuai dengan kebutuhan Anda:
 **File:** [`PROJECT_SUMMARY.md`](PROJECT_SUMMARY.md)
 
 - Overview project
-Docs index (short)
+# Index Dokumentasi (singkat)
 
-This file points to the main docs. Use the quick start if you just want to run the app.
+File ini nurunin file-file dokumentasi yang ada. Biar gampang cari.
 
-- `QUICK_START.md` — quick steps to get running
-- `README.md` — main project overview and how to run
-- `ARCHITECTURE.md` — technical notes (if you care)
-- `CHECKLIST.md` — requirement checklist for submission
-- `PROJECT_SUMMARY.md` — short summary for reviewers
+- `QUICK_START.md` — buat yang mau langsung jalanin
+- `README.md` — info umum project
+- `ARCHITECTURE.md` — catatan teknis singkat
+- `CHECKLIST.md` — ceklist buat submission
+- `PROJECT_SUMMARY.md` — ringkasan proyek
 
-Suggested reading order
-1. `QUICK_START.md` (2 minutes)
-2. `README.md` (5–10 minutes)
-3. `ARCHITECTURE.md` (if doing development)
+Rekomendasi baca:
+1. `QUICK_START.md` — cuma 1-2 menit
+2. `README.md` — kalau mau tau detail
+3. `ARCHITECTURE.md` — kalau mau ngembangin
 
 Last updated: November 14, 2025

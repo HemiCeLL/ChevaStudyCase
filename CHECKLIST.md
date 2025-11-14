@@ -24,23 +24,23 @@
 - Media Queries: Baris 390-530
 - Tested breakpoints:
   - Mobile: 320px, 480px, 640px
-  # Checklist (short)
+  # Checklist singkat
 
-  This is a quick checklist. Most items are implemented; a couple of deployment tasks are left as TODO.
+  Ini checklist cepat. Sebagian besar item udah jalan. Deploy belum tentu udah.
 
-  Status summary
-  - Public API: done (`fetchMealsBySearch`, `fetchMealById`)
-  - Responsive: done (mobile, tablet, desktop)
-  - Tech: vanilla JS + plain CSS
-  - Docs: present (`README.md`, `QUICK_START.md`, `ARCHITECTURE.md`, `PROJECT_SUMMARY.md`)
+  Ringkasan status:
+  - Public API: udah (fungsi `fetchMealsBySearch`, `fetchMealById`)
+  - Responsive: udah (mobile / tablet / desktop)
+  - Tech: vanilla JS + CSS biasa
+  - Docs: ada (`README.md`, `QUICK_START.md`, `ARCHITECTURE.md`, `PROJECT_SUMMARY.md`)
 
-  Remaining TODOs
-  - Push repo to GitHub (if not already)
-  - Deploy live preview (Netlify/Vercel) — optional for submission
+  Yang belum (TODO):
+  - Push repo ke GitHub (kalo belum)
+  - Deploy live (Netlify/Vercel) kalo mau demo
 
-  Testing quick checks
-  - Open `index.html` and try a few searches
-  - Check mobile and desktop layouts
-  - Open DevTools for network errors if things fail
+  Tes cepat:
+  - Buka `index.html`, coba beberapa pencarian
+  - Cek layout di mobile/desktop
+  - Cek DevTools -> Network kalo error
 
   Last updated: November 14, 2025
