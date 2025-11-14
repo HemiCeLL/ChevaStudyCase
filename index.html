@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeHub - Explore Delicious Meals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header/Navigation -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>🍳 RecipeHub</h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#menu" class="nav-link">Menu</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main">
+            <!-- Hero Section -->
+            <section id="home" class="hero">
+                <div class="hero-content">
+                    <h2>Discover Delicious Recipes</h2>
+                    <p>Explore a wide variety of meals from around the world</p>
+                    <button class="btn btn-primary" onclick="scrollToMenu()">Browse Recipes</button>
+                </div>
+            </section>
+
+            <!-- Search Section -->
+            <section id="menu" class="menu-section">
+                <div class="container">
+                    <h2 class="section-title">Recipe Collection</h2>
+                    
+                    <!-- Search Bar -->
+                    <div class="search-container">
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            class="search-input" 
+                            placeholder="Search for recipes..."
+                            aria-label="Search recipes"
+                        >
+                        <button class="btn btn-search" onclick="searchMeals()">Search</button>
+                    </div>
+
+                    <!-- Loading Indicator -->
+                    <div id="loadingSpinner" class="loading-spinner hidden">
+                        <div class="spinner"></div>
+                        <p>Loading recipes...</p>
+                    </div>
+
+                    <!-- Error Message -->
+                    <div id="errorMessage" class="error-message hidden" role="alert">
+                        <p id="errorText"></p>
+                    </div>
+
+                    <!-- Recipes Grid -->
+                    <div id="mealsContainer" class="meals-grid">
+                        <!-- Meals will be populated here by JavaScript -->
+                    </div>
+
+                    <!-- Empty State -->
+                    <div id="emptyState" class="empty-state hidden">
+                        <p>No recipes found. Try searching for something else!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about-section">
+                <div class="container">
+                    <h2 class="section-title">About RecipeHub</h2>
+                    <div class="about-content">
+                        <p>RecipeHub adalah platform untuk menemukan resep makanan dari seluruh dunia. Kami menggunakan TheMealDB API untuk memberikan Anda akses ke ribuan resep yang lezat dan mudah diikuti.</p>
+                        <p>Setiap resep dilengkapi dengan bahan-bahan, petunjuk memasak, dan video tutorial untuk memudahkan Anda menciptakan hidangan yang sempurna.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2025 RecipeHub. All rights reserved. | Data from TheMealDB API</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Modal for Meal Details -->
+    <div id="mealModal" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeMealModal()">&times;</button>
+            <div id="modalBody" class="modal-body">
+                <!-- Meal details will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+                <div class="card-header">
+                    <span class="card-number">1</span>
+                    <h2>Menggunakan Public API</h2>
+                </div>
+                <div class="card-content">
+                    <p>Pada halaman 'Menu' atau 'Home', peserta wajib menggunakan dan menampilkan data yang diambil dari Public API.</p>
+                    <p><strong>Contoh API yang dapat digunakan:</strong></p>
+                    <ul class="api-list">
+                        <li>DummyJSON</li>
+                        <li>TheMealDB</li>
+                        <li>API Kopi</li>
+                        <li>API Berita</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 2: Responsive -->
+            <section class="requirement-card">
+                <div class="card-header">
+                    <span class="card-number">2</span>
+                    <h2>Responsive</h2>
+                </div>
+                <div class="card-content">
+                    <p>Website harus rapi dan dapat tampil dengan baik di tiga ukuran layar:</p>
+                    <div class="responsive-grid">
+                        <div class="responsive-item">
+                            <span class="responsive-label">Mobile</span>
+                            <p>&lt;= 640px</p>
+                        </div>
+                        <div class="responsive-item">
+                            <span class="responsive-label">Tablet</span>
+                            <p>641 - 1024px</p>
+                        </div>
+                        <div class="responsive-item">
+                            <span class="responsive-label">Desktop</span>
+                            <p">&gt;= 1024px</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 3: Tech-Stack -->
+            <section class="requirement-card">
+                <div class="card-header">
+                    <span class="card-number">3</span>
+                    <h2>Tech-Stack yang Digunakan</h2>
+                </div>
+                <div class="card-content">
+                    <p>Peserta diperbolehkan menggunakan beberapa framework dan library yang sesuai dengan kebutuhan project.</p>
+                    <div class="tech-stack-container">
+                        <div class="tech-category">
+                            <h3>Frontend Framework</h3>
+                            <ul>
+                                <li>React</li>
+                                <li>Vue</li>
+                                <li>Svelte</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h3>CSS Framework</h3>
+                            <ul>
+                                <li>Tailwind</li>
+                                <li>Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 4: Clean Code -->
+            <section class="requirement-card">
+                <div class="card-header">
+                    <span class="card-number">4</span>
+                    <h2>Clean Code</h2>
+                </div>
+                <div class="card-content">
+                    <p>Peserta diharapkan menulis kode dengan struktur yang rapi dan terorganisir.</p>
+                    <ul class="clean-code-list">
+                        <li>
+                            <strong>Penamaan yang Konsisten</strong>
+                            <p>Class, function, dan variable harus mewakili apa yang dibuat (misal: <code>var age = 10</code>)</p>
+                        </li>
+                        <li>
+                            <strong>Struktur Folder Terstruktur</strong>
+                            <p>Letak foldering jelas dan tidak redundant, sesuai kebutuhan project</p>
+                        </li>
+                        <li>
+                            <strong>Semantic HTML</strong>
+                            <p>Menggunakan tag HTML yang bermakna dan sesuai konteks</p>
+                        </li>
+                        <li>
+                            <strong>Hindari Duplikasi</strong>
+                            <p>Menghindari duplikasi atau hardcode yang tidak diperlukan</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Section 5: Dokumentasi Project -->
+            <section class="requirement-card">
+                <div class="card-header">
+                    <span class="card-number">5</span>
+                    <h2>Dokumentasi Project</h2>
+                </div>
+                <div class="card-content">
+                    <p>Peserta wajib menyertakan file dokumentasi yang lengkap:</p>
+                    <ul class="documentation-list">
+                        <li>✓ Deskripsi singkat project</li>
+                        <li>✓ Output Project (gambar atau video)</li>
+                        <li>✓ Framework atau library yang digunakan</li>
+                        <li>✓ Alasan penggunaan framework/library</li>
+                        <li>✓ API yang digunakan</li>
+                        <li>✓ Cara menjalankan project</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Output Section -->
+            <section class="output-section">
+                <h2>Output yang Harus Dikumpulkan</h2>
+                <div class="output-grid">
+                    <div class="output-item">
+                        <span class="output-icon">📦</span>
+                        <h3>Repository GitHub</h3>
+                        <p>Project harus di-upload ke GitHub</p>
+                    </div>
+                    <div class="output-item">
+                        <span class="output-icon">📄</span>
+                        <h3>Dokumentasi Lengkap</h3>
+                        <p>File README, PDF, atau Word</p>
+                    </div>
+                    <div class="output-item">
+                        <span class="output-icon">🌐</span>
+                        <h3>Live Preview</h3>
+                        <p>Deploy di Vercel atau Netlify</p>
+                    </div>
+                    <div class="output-item">
+                        <span class="output-icon">📝</span>
+                        <h3>Dokumentasi Tambahan</h3>
+                        <p>Penjelasan slicing atau inspirasi design (Opsional)</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Front End Study Case Cheva. Semua hak dilindungi.</p>
+        </footer>
+    </div>
+</body>
+</html>
